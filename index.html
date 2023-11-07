@@ -28,11 +28,11 @@
             <img class="main_photo" src="assets/photo.jpg" alt="main_photo">
             <div class="left_col_text">
                 <h1>Ivan <br> Krytski</h1>
-                <h3 id="About">About Me </h3>
+                <h3 id="About">About Me</h3>
                 <div class="h3_after"></div>
                 <main>I am hard-working and responsible person.
                     I often have to deal with difficult situations and take quick decisions.</main>
-                <h3 id="Contacts">Contacts </h3>
+                <h3 id="Contacts">Contacts</h3>
                 <div class="h3_after"></div>
                 <div class="contact">
                     <div class="contact_wtaper">
@@ -52,7 +52,7 @@
                         <div class="text">ivankritsckii</div>
                     </div>
                 </div>
-                <h3>Languages </h3>
+                <h3>Languages</h3>
                 <div class="h3_after"></div>
                 <div class="contact">
                     <div class="contact_wtaper">
@@ -72,7 +72,7 @@
                         <div class="text">Polish (B2)</div>
                     </div>
                 </div>
-                <h3 id="Languages">My works </h3>
+                <h3 id="Languages">My works</h3>
                 <div class="h3_after"></div>
                 <div class="contact">
                     <div class="contact_wtaper">
@@ -82,7 +82,7 @@
                     <div class="contact_wtaper">
                         <div class="contacti_icon"><img src="assets/birds.svg" alt=""></div>
                         <a class="text" href="https://rolling-scopes-school.github.io/ivankritsckii-JSFE2022Q3/songbird/"> Song Bird</a>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,10 +163,9 @@
        let dDay = seconds-(day*86400)-(hour*3600)-(minute*60)-second;
        let year = dDay/(86400*365)
        let res = ''
-     
-       let render =(time, string)=>{
+       let render =(time, string)={
          if (time!=0){
-         if(time>1){res+= time+ ' ' + string+'s, '}
+         if(time1){res+= time+ ' ' + string+'s, '}
          else{res+= time+ ' '+ string+', '}
         }
        }
@@ -175,7 +174,6 @@
         render(hour, 'hour')
         render(minute, 'minute')
         render(second, 'second')
-       
        res= res.slice(0,res.length-2)
        let q = res.indexOf(',', res.length-12)
        if(q!=-1){
